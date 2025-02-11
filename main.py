@@ -64,18 +64,18 @@ while game_is_on:
                     # print(f'playerin cord lari: {player.xcor(), player.ycor()}')
 
         if player.ycor() > 230:
-                screen.clear()
-                screen.tracer(0)
-                player = Player()
-                scoreboard = Scoreboard()
-                scoreboard.level_up(level_num)
-                cars = []
-                screen.listen()
-                screen.onkey(player.go, 'space')
+            screen.clear()
+            screen.tracer(0)
+            player = Player()
+            scoreboard = Scoreboard()
+            scoreboard.level_up(level_num)
+            cars = []
+            screen.listen()
+            screen.onkey(player.go, 'space')
 
-                time.sleep(0.1)
-                screen.update()
-                level_num += 1
+            time.sleep(0.1)
+            screen.update()
+            level_num += 1
                     
     
         
